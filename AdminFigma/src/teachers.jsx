@@ -1,13 +1,15 @@
 import { useNavigate } from "react-router-dom";
 import logo from "./images/logo.svg"
 import bear from "./images/bear.svg"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome, faUserGraduate, faBuildingColumns, faGear, faChartSimple, faHeadset, faBell, faUser} from "@fortawesome/free-solid-svg-icons";
 
 export default function Teachers() {
     const navigate = useNavigate();
 
     return (
         <div className="container flex m-auto">
-            <div className="w-[20%] min-h-screen border bg-[#152259]">
+            <div className="w-[20%] min-h-screen bg-[#152259]">
                 <center>
                 <img className="mt-[26px]" src={logo} alt="icon" />
                 </center>
@@ -17,34 +19,34 @@ export default function Teachers() {
                     
                     <button onClick={() => navigate("/dashboard")}
                     className="w-[90%] h-10 border border-amber-50 rounded hover:bg-[#509CDB] hover:border-none ">
-                    <p className="text-white text-[14px]">Dashboard</p>
+                    <p className="text-white text-[14px]"><FontAwesomeIcon icon={faHome} className="mr-2" />Dashboard</p>
                     </button>
                     <button onClick={() => navigate("/teachers")}
                     className="w-[90%] h-10 border border-amber-50 rounded hover:bg-[#509CDB] hover:border-none ">
-                        <p className="text-white text-[14px]">Teachers</p>
+                        <p className="text-white text-[14px]"><FontAwesomeIcon icon={faHome} className="mr-2" />Teachers</p>
                     </button>
                     <button onClick={() => navigate("/students")}
                     className="w-[90%] h-10 border border-amber-50 rounded hover:bg-[#509CDB] hover:border-none ">
-                        <p className="text-white text-[14px]">Students</p>
+                        <p className="text-white text-[14px]"><FontAwesomeIcon icon={faUserGraduate} className="mr-2" />Students</p>
                     </button>
                     <button className="w-[90%] h-10 border border-amber-50 rounded hover:bg-[#509CDB] hover:border-none ">
-                        <p className="text-white text-[14px]">Billing</p>
+                        <p className="text-white text-[14px]"><FontAwesomeIcon icon={faBuildingColumns} className="mr-2" />Billing</p>
                     </button>
                     <button className="w-[90%] h-10 border border-amber-50 rounded hover:bg-[#509CDB] hover:border-none ">
-                        <p className="text-white text-[14px]">Settings and profile</p>
+                        <p className="text-white text-[14px]"><FontAwesomeIcon icon={faGear} className="mr-2" />Settings and profile</p>
                     </button>
                     <button className="w-[90%] h-10 border border-amber-50 rounded hover:bg-[#509CDB] hover:border-none ">
-                        <p className="text-white text-[14px]">Exams</p>
+                        <p className="text-white text-[14px]"><FontAwesomeIcon icon={faChartSimple} className="mr-2" />Exams</p>
                     </button>
                     <button className="w-[90%] h-10 border mt-[150px] border-amber-50 rounded hover:bg-[#509CDB] hover:border-none ">
-                        <p className="text-white text-[14px] ">Features new</p>
+                        <p className="text-white text-[14px] "><FontAwesomeIcon icon={faBuildingColumns} className="mr-2" />Features new</p>
                     </button>
                 </div>
             </div>    
-            <div className="w-full min-h-screen border pt-[30px]">
+            <div className="w-full min-h-screen pt-[30px]">
                 <div className="container w-[93.5%] m-auto">
                 <menu className="flex justify-end items-center gap-10">
-                        <img src="#" alt="icon" />
+                <FontAwesomeIcon icon={faBell} className="mr-5 text-[#152259]" size="2x" />
                         <button onClick={() => navigate("/signup")}
                         className="w-30 h-10 bg-[#152259] border-amber-50 rounded hover:bg-[#509CDB] hover:border-none ">
                             <p className="text-white">Log Out</p>
@@ -69,7 +71,7 @@ export default function Teachers() {
                 </div>
                 <div className="flex justify-end mr-5">
                        <button className="w-[181px] h-15 bg-[#152259] rounded-[30px]  border-amber-50 hover:bg-[#509CDB] hover:border-none mt-4">
-                            <p className="text-white">Support</p>
+                            <p className="text-white"><FontAwesomeIcon icon={faHeadset} className="mr-2" />Support</p>
                         </button>
                        </div>   
                 
